@@ -1,0 +1,309 @@
+body, .registroP, .creaC{   
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right bottom, #1600ff, #0064ff, #008fff, #00b3ff,
+     #00d1ff, #00d1ff, #00d1ff, #00d1ff, #00b3ff, #008fff, #0064ff, #1600ff);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+h1{
+    color: navy;
+   margin: 0;
+   padding: 0 0 1.2em;
+   text-align: center;
+   font-size: 1.6em!important;
+   font-family:Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.usu{
+    width: 20.3em;
+    height: 6em;
+    position: absolute;
+    top: 8.5em;
+    left: calc(22% - 3.1em);
+}
+
+label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    color: navy;
+}
+
+input{    
+    width: 100%;
+    margin-bottom: 1.2em;    
+}
+
+input[type="button"]:hover{
+    background-color:#39F3FB;
+}
+
+/*hace que el texto de las casillas se me ponga en negrita*/
+::-webkit-input-placeholder { 
+    color: black 
+} 
+/*encargado de darle estilos a los cuadros que se encuentran en el registro de un usuario*/
+fieldset{
+    color: navyt;
+    border-color: aqua;
+}
+
+
+
+
+/* Estilo del login(pagina principal del login) */
+/*se encarga de acomodar lo que se encuentra en el login como por ejemplo input, botones*/
+.login{
+    width: 20em;
+    height: 21em;
+    background:paleturquoise;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 3.8em 1.9em;  
+}
+/*da formato a la imagen del login*/
+ .imagenLog{
+    width: 5.9em;
+    height: 6em;
+    position: absolute;
+    top: -3em;
+    left: calc(48% - 3.1em);
+}
+/*da formato a ciertos input*/
+ input[type="text"],
+ input[type="password"]{  
+    border: none;
+    border-bottom: 0.1em solid #0F9696;
+    background: transparent;
+    outline: none;
+    height: 2em;
+    font-size: 0.8em;
+    width: -20em;
+}
+/*da formato a ciertos input*/
+ input[type="button"]{
+    outline: none;
+    height: 2em;
+    background: gray; 
+    border-color: aqua;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #121E6B;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+/* perteneciente al registro de la cuenta*/
+/*da formato a ciertos input*/
+input[type="email"],
+input[type="tel"]{
+    border: none;
+    border-bottom: 0.1em solid #0F9696;
+    background: transparent;
+    outline: none;
+    height: 2em;   
+    font-size: 0.8em; 
+}
+
+
+
+/*se encarga de acomodar lo que se encuentra en la interfaz de registro*/
+.registro{
+    width: 18em;
+    height: 35em;
+    background:paleturquoise;
+    top: 66%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 3.2em 2em;
+}
+/*formato a imagen que se encuentra en la interfaz de la pagina principal del registro*/
+.imagenReg{
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    top: -3em;
+    left: calc(50% - 3.1em);
+}
+
+.nom{
+    width: 17.7em;
+    height: 6em;
+    position: absolute;
+    top: 8.5em;
+    left: calc(24.7% - 3.1em);
+}
+
+
+/* perteneciente a la interfaz de crear correo */
+
+.principal, .btnReg, .redactar{
+    border-radius: 1.3em!important;
+}
+/* formato al div que contiene la informacion como por ejemplo input de la creacion del correo*/
+.crearCorreo{
+    width: 40em;
+    height: 29em;
+    background:paleturquoise;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 3.8em 1.9em;
+}
+
+.crear{
+    width: 40.9em;
+    color: black;
+}
+/*formato al textarea en donde se desarrollara el correo que deseamos enviar*/
+textarea {
+    resize: none!important;
+    width: 33em;
+    height: 10em;
+    opacity: 83%;
+    color: black;
+    border: solid 2px #0F9696;
+   
+}
+/*formato al boton de enviar un correo*/
+  .btnCrear{
+    text-align:center;   
+    width: 8em;
+    top: 85%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 0.2em 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center;   
+  }
+/*formato al boton de descartar un correo*/
+  .descartar{
+    text-align: center;   
+    width: 8em;
+    top: 85%;
+    left: 15%;
+    position: absolute;
+    transform: translate(+60%,-50%);
+    padding: 0.2em 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+  }
+
+  /*perteneciente a la interfaz principal del correo*/
+
+.redactar, .recibido, .enviado, .borrador, .abandonar, .borrador{
+    width: 9em;
+    height: 25em; 
+    transform: translate(40%,360%);
+    font-size: 1em!important;
+}
+/*formato a imagen que se encuentra en la interfaz de la pagina principal del correo*/
+.img_principal{
+    width: 5.9em;
+    height: 6em;
+    position: absolute;
+    top: -3em;   
+    transform: translate(85%,60%);
+}
+/*formato del buscador que se encuentra en la pagina principal para mayor 
+rapidez a la hora de localizar un correo*/
+.buscador{
+    width: 40.9em;
+    color: black;  
+    transform: translate(36.7%,-830%);  
+     
+    }
+/*formato a tabla que usaremos */
+.tabla{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1em;
+    width: 1000px;
+     height: 450px;
+     transform: translate(24%,-50.5%); 
+     overflow:scroll;    
+}
+
+/*se encarga de ponerme oculto el scroll de la tabla donde se 
+encuentra la informacion de los correos*/
+::-webkit-scrollbar-corner{
+   color: transparent;
+}
+/*se encarga de ponerme oculto el scroll de la tabla donde se 
+encuentra la informacion de los correos*/
+::-webkit-scrollbar{
+    color: transparent;
+}
+/*formato a tabla que usaremos */
+table{
+    background-color:white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+/*me da formato a las casillas que contiene la tabla que usaremos*/
+th, td{
+    padding: 0.5em;
+    border-bottom: solid 2px #0F9696;
+}
+/*se encarga de ponerme de colores las casillas de la tabla*/
+tr:nth-child(even){
+    background-color: #BDB8B8;
+}
+/*se encarga de ponerme de colores las casillas de la tabla*/
+tr:nth-child(odd){
+    background-color:white
+}
+
+tr:hover {
+    background-color: aqua; 
+}
+
+th:hover select:hover{
+    background-color:white
+}
+
+.leerInfo{
+    width: 35em;
+    height: 27em;
+    background:white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;  
+    overflow:scroll;  
+}
+
+@media (max-width: 630px) {
+    .leerInfo{
+        width: 20em;
+        height: 21em;
+        background:white;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;  
+    }
+  }
+    
+/*me muestra la alerta por encima de todo*/
+.alert{
+    z-index: 2;
+  };

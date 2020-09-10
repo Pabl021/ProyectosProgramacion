@@ -1,0 +1,4 @@
+cd..
+cd..
+cd xampp VERDADERO
+php\php.exe C:\Users\josep\OneDrive\Documentos\Programación-web-l\1.TiendaVirtual\cronjob\cronjob2.php 6

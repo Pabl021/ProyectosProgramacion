@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 3px;
+}
+
+
+body{
+ background-image: url('imagenes/vacas.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+h4{
+    font-family:cursive;
+    font-size: 22px;
+}
+
+
+
+.flip-card {
+    width: 500px;
+    height: 500px;        
+        position: absolute;
+        top:33%;
+        left: 40%;           
+        margin-top: -100px;
+        margin-left: -100px;
+        opacity:70%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+      
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-back {
+    background-image: url('imagenes/info.jpeg');
+    transform: rotateY(180deg);
+  }
+
+
+  .form-control{
+    background: rgba(247, 219, 203, 0.979);
+    border: 0px;
+    border-radius: 0px;
+    margin-top: 10px;
+    height: 45px;
+    font-size: 13px;
+    color: black;
+}
+.btn-primary{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 20px;
+    width: 99%;
+    font-size: 23px;
+    background: #f7b178;
+    border: 0px;
+    border-radius: 0px;
+}
+
+
+.col-md-5{
+    background:transparent;
+    box-shadow: -1px 1px 50px 10px rgb(0, 0, 0);
+    margin-top: 125px;
+    border-radius: 10px 0px 20px 0px;
+   
+}
+#inNombre, #inPass{
+    font-size: 20px;
+}
+
+.info{
+  background-color: black;
+  box-shadow: -1px 1px 50px 10px rgb(0, 0, 0);
+  margin-top: 25px;
+  border-radius: 10px 0px 20px 0px;
+  opacity: 80%;
+}
+
+.contCP, .contSC, .contCC{
+  background-color: black;
+  box-shadow: -1px 1px 50px 10px rgb(0, 0, 0);
+  margin-top: 70px;
+  border-radius: 10px 0px 20px 0px;
+  opacity: 80%;
+}
+
+.admin{
+  background-color: black;
+  box-shadow: -1px 1px 50px 10px rgb(0, 0, 0);
+ 
+  border-radius: 10px 0px 20px 0px;
+  opacity: 80%;
+}
+
+#crearPro, #crearSub{
+  font-size: 20px;
+  background-color: rgba(247, 219, 203, 0.979);
+  width: 100%;
+    font-size: 23px;
+}
+
+.card {
+  float: left;
+  display: flex;
+  opacity: 85%;
+  top: 20px;
+}
+
+.card .content {
+  flex: 1 1 auto;
+  
+}
+
+.img{
+  display:block;
+  margin:auto;
+  }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBMAIL</title>
+    <link rel="stylesheet" href="Estilo.css"/>
+    <link rel="icon" type="image/png" 
+    href="img/webmail.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="JSPrincipal.js"></script>
+</head>
+<body onload="cargarTablaPrincipal()">
+
+  <div id="myAlert" class="container my-3">
+  </div>
+
+    <!--div principal que contiene los botones de la pantalla princiapl de la aplicación-->
+<div class="pri">
+    <img class="img_principal" src="img/email.png" >
+    <form>
+        <input class="redactar btn btn-primary" type="button" value="➕ Redactar" OnClick="location.href='Crear_correo.html' "></br></br>
+        <input class="recibido btn btn-primary" type="button" value="📥 Recibidos" OnClick="location.href='Recibidos.html'"></br></br>
+        <input class="borrador btn btn-primary" type="button" value="✏️ B. Salida " OnClick="location.href='B.Entrada.html' "></br></br>
+        <input class="enviado btn btn-primary" type="button" value="✔️ Enviados" OnClick="location.href='Enviados.html' "></br>  </br>
+        <input class="abandonar btn btn-primary" type="button" value="🏃 Abandonar" OnClick="location.href='Login.html' "></br></br>          
+    </form>
+</div>
+   
+<!--contiene la información quemada de los correos principales que han llegado-->
+<div class="tabla" >
+    <table id="tablaPrincipal">
+        <thead>
+            <!-- Info estática -->
+
+            <tr>                       
+                <th>Destino</th>                       
+                <th>Mensaje</th>
+                <th>Fecha</th>
+                <th>👁️</th>
+                <th>🗑️</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="datarowPrincipal">
+
+
+        </tbody>
+
+    </table>
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Map</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div id="map">
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div id="misdatosPri" class="modal-body">
+ 
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

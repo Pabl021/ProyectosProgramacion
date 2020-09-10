@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilo.css"/> 
+    <link rel="icon" type="image/png" 
+    href="img/webmail.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="JSCrear_Correo.js"></script>
+</head>
+
+<body class="creaC">  
+<div id="myAlert" class="container my-3">
+</div>
+    <!--en este se encuentra la información para enviar un correo,
+         como por ejejmplo los destinatarios, asunto 
+    el correo a enviar y los botones-->
+    <div class="crearCorreo">
+
+        <label  for="destinatario">Destinatarios </label>
+        <input id="destino" class="crear" type="email"  placeholder="Ej : josepablobc21@gmail.com, Hugo02@hotmail.com" autocomplete="off"/><br>
+
+        <label  for="asunto">Asunto </label>
+        <input id="asunto" class="crear" type="text" placeholder="Ej : Proyecto web 2020" autocomplete="off"/><br>
+
+        <label  for="asunto">Contenido </label>
+        <textarea id="info" name="comentarios"  placeholder="Lic. José Pablo Bolaños C.
+
+        Director General del Colegio de Bachilleres.
+
+
+        Estimado Director Kendall Vargas,
+        
+        por medio de la presente me permito informarle que, conforme a los ajustes realizados a la reforma educativa durante el semestre pasado del año en curso, deberá reestructurar los planes de estudio correspondientes a los niveles de primer, segundo y tercer año de bachillerato.
+        
+        Por tanto le solicito atentamente que me haga llegar dichos planes de estudio al correo electrónico planesdeestudio@sep.mx, teniendo como fecha límite el día 1 de Abril de 2020.
+        
+        Sin más por el momento y agradeciendo de antemano su colaboración y pronta respuesta, quedo de usted. Saludos cordiales.
+        
+         "></textarea>
+                                                                                
+        <input class="btnCrear btn btn-primary"  type="button" value="Enviar" onClick="validarDatosEnviarCorreo()">
+        <input class="descartar btn btn-primary"  type="button" value="Descartar" OnClick="location.href='Principal.html' ">
+    </div>
+    
+</body>
+</html>
